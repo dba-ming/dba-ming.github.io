@@ -4,6 +4,19 @@
   
   
   <entry>
+    <title>hello_world</title>
+    <link href="/2024/03/23/hello_world/"/>
+    <url>/2024/03/23/hello_world/</url>
+    
+    <content type="html"><![CDATA[<p>在 markdown 中加入如下的代码来使用便签：</p><figure class="highlight markdown"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><code class="hljs markdown">&#123;% note success %&#125;<br>文字 或者 <span class="hljs-code">`markdown`</span> 均可<br>&#123;% endnote %&#125;<br></code></pre></td></tr></table></figure><p>或者使用 HTML 形式：</p><figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs html"><span class="hljs-tag">&lt;<span class="hljs-name">p</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;note note-primary&quot;</span>&gt;</span>标签<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span><br></code></pre></td></tr></table></figure>]]></content>
+    
+    
+    
+  </entry>
+  
+  
+  
+  <entry>
     <title>博客搭建：hexo框架+qexo后台+github自动流</title>
     <link href="/2023/01/23/%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA-hexo%E6%A1%86%E6%9E%B6+qexo%E5%90%8E%E5%8F%B0+github%E8%87%AA%E5%8A%A8%E6%B5%81/"/>
     <url>/2023/01/23/%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA-hexo%E6%A1%86%E6%9E%B6+qexo%E5%90%8E%E5%8F%B0+github%E8%87%AA%E5%8A%A8%E6%B5%81/</url>
