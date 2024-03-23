@@ -4,19 +4,6 @@
   
   
   <entry>
-    <title>test_0323</title>
-    <link href="/2024/03/22/test_0323/"/>
-    <url>/2024/03/22/test_0323/</url>
-    
-    <content type="html"><![CDATA[<h4 id="临时表清理"><a href="#临时表清理" class="headerlink" title="临时表清理"></a>临时表清理</h4><p>select concat(‘dbm drop_ghost ‘,pdd_id) from pdd_shard_instance where shard_name like &#x3D;</p><p>参数：-not -name</p><p>-o 是或者的意思</p><p>-a 是而且的意思</p><p>-not 是相反的意思</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br></pre></td><td class="code"><pre><code class="hljs plaintext">-- 匹配 &quot;*.awk&quot;的文件，排除 exam_4.awk 这个文件<br>[root@dbaming ~]#  find . -type f -name &quot;*.awk&quot; -not -name &quot;exam_4.awk&quot;<br>./exam_2.awk<br>./exam_3.awk<br>./exam_1.awk<br><br>-- 匹配 &quot;*.awk&quot;的文件，排除 exam_4.awk 和 exam_3.awk 这两个文件。用 -a 连接，表示和。<br>[root@dbaming ~]# find . -type f -name &quot;*.awk&quot; -not -name &quot;exam_4.awk&quot; -a -not -name &quot;exam_3.awk&quot;<br>./exam_2.awk<br>./exam_1.awk<br><br>-- 深度为1,（不进入文件夹），匹配 &quot;*a*&quot;的文件，排除 *.log 后缀的文件<br>[root@dbaming ~]#  find . -maxdepth 1 -name &quot;*a*&quot; -not -name &quot;*.log&quot;<br>./a.sh<br>./ss5-3.8.9-8.tar.gz<br>./percona_toolkit_3-master.zip<br>./exam_2.awk<br>./mydumper-0.9.1.tar.gz<br></code></pre></td></tr></table></figure><p>test</p>]]></content>
-    
-    
-    
-  </entry>
-  
-  
-  
-  <entry>
     <title>Hello World</title>
     <link href="/2024/03/21/hello-world/"/>
     <url>/2024/03/21/hello-world/</url>
@@ -24,33 +11,6 @@
     <content type="html"><![CDATA[<p>Welcome to <a href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p><h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs bash">$ hexo new <span class="hljs-string">&quot;My New Post&quot;</span><br></code></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/writing.html">Writing</a></p><h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs bash">$ hexo server<br></code></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/server.html">Server</a></p><h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs bash">$ hexo generate<br></code></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/generating.html">Generating</a></p><h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs bash">$ hexo deploy<br></code></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>]]></content>
     
     
-    
-  </entry>
-  
-  
-  
-  <entry>
-    <title>first_note</title>
-    <link href="/2023/03/21/first-note-1/"/>
-    <url>/2023/03/21/first-note-1/</url>
-    
-    <content type="html"><![CDATA[<h3 id="2、优化器配置"><a href="#2、优化器配置" class="headerlink" title="2、优化器配置"></a>2、优化器配置</h3><p>优化器的配置符合预期</p><figure class="highlight gherkin"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><code class="hljs gherkin">|<span class="hljs-string"> optimizer_prune_level                                    </span>|<span class="hljs-string"> 1                                                                                                                                                                                                                                                                                                                                                                                                                </span>|<br>|<span class="hljs-string"> optimizer_search_depth                                   </span>|<span class="hljs-string"> 62                                                                                                                                                                                                                                                                                                                                                                                                               </span>|<br>|<span class="hljs-string"> optimizer_switch                                         </span>|<span class="hljs-string"> index_merge=on,index_merge_union=on,index_merge_sort_union=on,index_merge_intersection=on,engine_condition_pushdown=on,index_condition_pushdown=on,mrr=on,mrr_cost_based=on,block_nested_loop=on,batched_key_access=off,materialization=on,semijoin=on,loosescan=on,firstmatch=on,duplicateweedout=on,subquery_materialization_cost_based=on,use_index_extensions=on,condition_fanout_filter=on,derived_merge=on </span>|<br>|<span class="hljs-string"> optimizer_trace                                          </span>|<span class="hljs-string"> enabled=off,one_line=off                                                                                                                                                                                                                                                                                                                                                                                         </span>|<br>|<span class="hljs-string"> optimizer_trace_features                                 </span>|<span class="hljs-string"> greedy_search=on,range_optimizer=on,dynamic_range=on,repeated_subselect=on                                                                                                                                                                                                                                                                                                                                       </span>|<br>|<span class="hljs-string"> optimizer_trace_limit                                    </span>|<span class="hljs-string"> 1                                                                                                                                                                                                                                                                                                                                                                                                                </span>|<br>|<span class="hljs-string"> optimizer_trace_max_mem_size                             </span>|<span class="hljs-string"> 16384                                                                                                                                                                                                                                                                                                                                                                                                            </span>|<br>|<span class="hljs-string"> optimizer_trace_offset                                   </span>|<span class="hljs-string"> -1 </span><br></code></pre></td></tr></table></figure><hr><h3 id="3、检查表的大小"><a href="#3、检查表的大小" class="headerlink" title="3、检查表的大小"></a>3、检查表的大小</h3><p>然<strong>后就可</strong>以直接使用：<br><font color=#FF0000 >红色</font><br><font color=#008000 >绿色</font></p><table><tr><td bgcolor=#f2f2f2> 背景色是 灰色</td></tr></table><table><tr><td bgcolor= #f5f5dc > 背景色 米黄色  </td></tr></table><table><tr><td bgcolor= #ffe4e1 > 背景色 米红色  </td></tr></table><p align="center">  <img src="https://hexo-qexo.oss-cn-shanghai.aliyuncs.com/MySQL%E5%B1%82%E4%BA%8B%E5%8A%A1%E6%8F%90%E4%BA%A4%E6%B5%81%E7%A8%8B-2.png" alt="描述" style="border:2px solid lightblue; width: 50%; border-radius: 10px;" /></p><p><img src="/images/pasted-0.png" alt="这里可以写描述"></p><p><img src="https://hexo-qexo.oss-cn-shanghai.aliyuncs.com/20240322154126.png" alt="这里可以写描述"></p><p align="center">  <img src="https://hexo-qexo.oss-cn-shanghai.aliyuncs.com/20240322160446.png" alt="描述" style="border:2px solid lightblue; width: 80%; border-radius: 10px;" /></p>]]></content>
-    
-    
-    <categories>
-      
-      <category>MySQL</category>
-      
-    </categories>
-    
-    
-    <tags>
-      
-      <tag>test</tag>
-      
-      <tag>dba</tag>
-      
-    </tags>
     
   </entry>
   
