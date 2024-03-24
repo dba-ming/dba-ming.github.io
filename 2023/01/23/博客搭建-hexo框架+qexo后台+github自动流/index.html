@@ -222,7 +222,7 @@
       <span class="post-meta mr-2">
         <i class="iconfont icon-chart"></i>
         
-          1.5k 字
+          1.6k 字
         
       </span>
     
@@ -336,8 +336,101 @@
       </div>
     </div>
 
-<div style="overflow-x:scroll;white-space: nowrap;width: calc(100% - 10px);border: 1px solid black;border-collapse: collapse;BACKGROUND: #F8F9FC">
-<table>
+<style>
+.table{
+    position:relative;
+    overflow:hidden;
+    border:black 1px solid; 
+    BACKGROUND: #F8F9FC;
+    z-index:10;
+}
+.title /* 表头行 */{
+    position:relative;
+    overflow:hidden;
+    z-index:10;
+}
+.title span{
+    BORDER-RIGHT: #555 1px solid;
+    BORDER-TOP: #fff 1px solid;
+    BORDER-BOTTOM: #555 1px solid;
+    BORDER-LEFT: #fff 1px solid;
+    padding:2 1 2 2;
+    BACKGROUND: #ccc;
+    overflow:hidden;
+    WHITE-SPACE: nowrap;
+    position:relative;
+    display:inline-block;
+}
+.content /* 内容区 */{
+    position:relative;
+    overflow:hidden;
+}
+.content span{
+    BORDER-RIGHT: #555 1px solid;
+    BORDER-TOP: #fff 1px solid;
+    BORDER-BOTTOM: #555 1px solid;
+    BORDER-LEFT: #fff 1px solid;
+    padding:2 1 2 2;
+    overflow:hidden;
+    WHITE-SPACE: nowrap;
+    position:relative;
+    display:inline-block;
+}
+.vscroll{
+    position:absolute;
+    right:0px;
+    top:0px;
+    height:100%;
+    width:10px;
+    background:#f1f1f1;
+    border:#CCF 1px solid;
+    overflow:hidden;
+    z-index:10;
+}
+.hscroll{
+    position:absolute;
+    bottom:0px;
+    left:0px;
+    height:10px;
+    width:100%;
+    background:#f1f1f1;
+    border:#CCF 1px solid;
+    overflow:hidden;
+    z-index:10;
+}
+.vglide /* 滑块样式 */{
+    position:absolute;
+    z-index:10;
+    top:0px;
+    left:0px;
+    width:100%;
+    height:20px;
+    overflow:hidden;
+    background:#666666
+}
+.hglide /* 滑块样式 */{
+    position:absolute;
+    z-index:10;
+    top:0px;
+    left:0px;
+    width:20px;
+    height:100%;
+    overflow:hidden;
+    background:#666666
+}
+.fillbox{
+    position:absolute;
+    height:10px;
+    width:10px;
+    bottom:0px;
+    right:0px;
+    background:#f1f1f1;
+    border:#CCF 1px solid;
+    z-index:10;
+}
+</style>
+
+
 
 <table>
 <thead>
@@ -595,9 +688,6 @@
 <td></td>
 </tr>
 </tbody></table>
-</table>
- </div>
-
 <p>12121</p>
 
                 
