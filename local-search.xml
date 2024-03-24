@@ -4,19 +4,6 @@
   
   
   <entry>
-    <title>test1111</title>
-    <link href="/2024/03/24/title/"/>
-    <url>/2024/03/24/title/</url>
-    
-    <content type="html"><![CDATA[<video width="320" height="240" controls>  <source src="https://hexo-qexo.oss-cn-shanghai.aliyuncs.com/video.mp4" type="video/mp4"></video><p>1112121212</p>]]></content>
-    
-    
-    
-  </entry>
-  
-  
-  
-  <entry>
     <title>博客搭建：hexo框架+qexo后台+github自动流</title>
     <link href="/2023/01/23/%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA-hexo%E6%A1%86%E6%9E%B6+qexo%E5%90%8E%E5%8F%B0+github%E8%87%AA%E5%8A%A8%E6%B5%81/"/>
     <url>/2023/01/23/%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA-hexo%E6%A1%86%E6%9E%B6+qexo%E5%90%8E%E5%8F%B0+github%E8%87%AA%E5%8A%A8%E6%B5%81/</url>
