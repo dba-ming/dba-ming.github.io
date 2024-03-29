@@ -765,13 +765,13 @@ sup > a::before,
   padding: 3rem 0;
 }
 html {
-  font-size: 16px;
-  letter-spacing: 0.02em;
+  font-size: 32px;
+  letter-spacing: 0.03em;
 }
 html,
 body {
   height: 100%;
-  font-family: var(--font-family-sans-serif);
+  font-family: 微软雅黑;
   overflow-wrap: break-word;
 }
 body {
@@ -1392,7 +1392,7 @@ figure.highlight td.code > pre {
 .markdown-body {
   font-size: 1rem;
   line-height: 1.6;
-  font-family: var(--font-family-sans-serif);
+  font-family: 微软雅黑;
   margin-bottom: 2rem;
   color: var(--post-text-color);
 }
