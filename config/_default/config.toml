@@ -1,5 +1,5 @@
 # Change baseurl before deploy
-baseurl = "https://goofish-shop.github.io/hugo-stack/"
+baseurl = "https://dba-ming.github.io"
 languageCode = "en-us"
 title = "Hugo Theme Stack Starter"
 
