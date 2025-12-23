@@ -3,7 +3,7 @@ title: test
 description: test
 slug: test
 date: 2022-03-06 00:00:00+0000
-image: 111.jpg
+image: 222.png
 categories:
     - Example Category
 tags:
