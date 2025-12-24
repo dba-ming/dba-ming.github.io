@@ -1,11 +1,18 @@
 <style>
     :root {
-        /* 这里的变量名取决于主题版本，通常是 --container-max-width */
-        --container-max-width: 1200px; 
+        /* Stack 主题控制布局宽度的核心变量 */
+        --container-max-width: 1600px; /* 默认通常为 1200px，你可以调大 */
+        --article-max-width: 1000px;   /* 专门控制文章正文宽度的变量 */
+    }
+
+    /* 如果变量失效，直接强制修改容器类名 */
+    .main-container {
+        max-width: 95% !important; /* 使用百分比实现极宽展示 */
     }
     
-    /* 如果想让正文部分自适应且更宽，可以尝试强制调整主容器 */
-    .main-container {
-        max-width: 95%; /* 使用百分比实现自适应长度 */
+    .article-page .main-article {
+        max-width: 1000px; /* 调整文章主体的最大宽度 */
+        margin-left: auto;
+        margin-right: auto;
     }
 </style>
