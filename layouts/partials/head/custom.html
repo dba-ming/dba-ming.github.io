@@ -1,32 +1,33 @@
 <style>
     :root {
-        /* 1. 定义全局最大宽度 */
+        /* 1. 扩大整体容器宽度，确保有足够空间容纳三栏 */
         --container-max-width: 1600px;
-        /* 2. 显式定义右侧栏宽度（建议不要低于 200px，否则目录会挤在一起） */
-        --custom-right-sidebar-width: 300px; 
+        /* 2. 定义一个更合理的右侧栏宽度（100px 太窄，目录文字会重叠） */
+        --custom-right-sidebar-width: 260px; 
     }
 
-    /* 3. 核心修复：仅在大屏幕（桌面端）强制开启三栏并行布局 */
+    /* 3. 只在桌面端（1024px以上）强制开启三栏并行模式 */
     @media (min-width: 1024px) {
         .main-container {
             display: grid !important;
-            /* 关键：左侧固定、中间自适应、右侧固定自定义宽度 */
+            /* 核心：强制定义 左侧、中间、右侧 的列比例 */
             grid-template-columns: var(--sidebar-width) 1fr var(--custom-right-sidebar-width) !important;
-            column-gap: var(--section-gap); /* 保持间距 */
-            max-width: 95% !important; /* 增加整体利用率 */
+            /* 确保网格不会因为内容过多而换行 */
+            grid-template-rows: auto;
+            column-gap: var(--section-gap);
         }
 
-        /* 4. 强制右侧栏保持在网格的第三列，防止掉下去 */
+        /* 4. 显式指定右侧栏占据网格的第 3 列 */
         .right-sidebar {
             grid-column: 3 / 4 !important;
+            display: block !important; 
             width: var(--custom-right-sidebar-width) !important;
-            display: block !important;
         }
-    }
 
-    /* 5. 调整文章正文的最大宽度限制 */
-    .article-page .main-article {
-        max-width: 1200px; 
-        margin: 0 auto;
+        /* 5. 确保中间文章区域占据第 2 列 */
+        .main-article {
+            grid-column: 2 / 3 !important;
+            max-width: 100% !important; /* 让它填满中间的 1fr 空间 */
+        }
     }
 </style>
