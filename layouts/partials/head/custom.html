@@ -1,26 +1,33 @@
 <style>
     :root {
-        /* Stack 主题控制布局宽度的核心变量 */
-        --container-max-width: 1600px; /* 默认通常为 1200px，你可以调大 */
-        --article-max-width: 1300px;   /* 专门控制文章正文宽度的变量 */
-        /* 强制缩小右侧小部件（目录所在区域）的宽度 */
-        --right-sidebar-width: 100px; 
+        --container-max-width: 1600px;
+        --article-max-width: 1300px;
+        /* 我们自定义一个数值，建议不要小于 200px，否则目录文字会挤在一起 */
+        --custom-right-sidebar-width: 150px; 
     }
 
-    /* 如果变量失效，直接强制修改容器类名 */
-    .main-container {
-        max-width: 93% !important; /* 使用百分比实现极宽展示 */
+    /* 针对桌面端大屏幕修改布局结构 */
+    @media (min-width: 1024px) {
+        .main-container {
+            /* 强制重写网格：[左侧栏宽度] [中间自适应] [右侧自定义宽度] */
+            display: grid !important;
+            grid-template-columns: var(--sidebar-width) 1fr var(--custom-right-sidebar-width) !important;
+            max-width: 93% !important;
+        }
     }
-    
+
     .article-page .main-article {
-        max-width: 1300px; /* 调整文章主体的最大宽度 */
+        max-width: var(--article-max-width);
         margin-left: auto;
         margin-right: auto;
     }
 
-    /* 确保目录组件本身不会超出设定的宽度 */
-    .widget.toc {
-        max-width: 80%;
+    /* 确保右侧小部件（包括目录）填满新设定的宽度 */
+    .right-sidebar {
+        width: var(--custom-right-sidebar-width) !important;
     }
 
+    .widget.toc {
+        width: 100% !important;
+    }
 </style>
