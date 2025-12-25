@@ -23,4 +23,35 @@
         max-width: 85%;
     }
 
+/* 缩小侧边栏分类 (Categories Widget) 的框 */
+.widget.categories .category-card {
+    padding: 10px 12px !important; /* 减小外层框的内边距，默认通常较大 */
+    min-height: auto !important;   /* 去掉最小高度限制，让框根据内容收缩 */
+    
+    .details {
+        padding: 5px 10px !important; /* 减小文字描述区域的间距 */
+    }
+
+    .icon {
+        width: 32px !important;  /* 缩小图标尺寸（可选） */
+        height: 32px !important;
+    }
+
+    h4 {
+        font-size: 1.4rem !important; /* 缩小分类标题文字 */
+        margin-bottom: 0 !important;
+    }
+
+    .count {
+        font-size: 1.2rem !important; /* 缩小文章数量数字 */
+        opacity: 0.8;
+    }
+}
+
+/* 如果是针对归档页面内的分类标签（Badges） */
+.article-page .article-details .article-category a {
+    padding: 4px 10px !important; /* 缩小文章页标题下方的分类框 */
+    font-size: 1.2rem !important;
+}
+
 </style>
