@@ -3,6 +3,8 @@
         /* Stack 主题控制布局宽度的核心变量 */
         --container-max-width: 1600px; /* 默认通常为 1200px，你可以调大 */
         --article-max-width: 1300px;   /* 专门控制文章正文宽度的变量 */
+        /* 强制缩小右侧小部件（目录所在区域）的宽度 */
+        --right-sidebar-width: 250px; 
     }
 
     /* 如果变量失效，直接强制修改容器类名 */
@@ -15,4 +17,10 @@
         margin-left: auto;
         margin-right: auto;
     }
+
+    /* 确保目录组件本身不会超出设定的宽度 */
+    .widget.toc {
+        max-width: 100%;
+    }
+    
 </style>
