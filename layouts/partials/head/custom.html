@@ -1,33 +1,32 @@
 <style>
     :root {
+        /* 1. 定义全局最大宽度 */
         --container-max-width: 1600px;
-        --article-max-width: 1300px;
-        /* 我们自定义一个数值，建议不要小于 200px，否则目录文字会挤在一起 */
-        --custom-right-sidebar-width: 150px; 
+        /* 2. 显式定义右侧栏宽度（建议不要低于 200px，否则目录会挤在一起） */
+        --custom-right-sidebar-width: 300px; 
     }
 
-    /* 针对桌面端大屏幕修改布局结构 */
+    /* 3. 核心修复：仅在大屏幕（桌面端）强制开启三栏并行布局 */
     @media (min-width: 1024px) {
         .main-container {
-            /* 强制重写网格：[左侧栏宽度] [中间自适应] [右侧自定义宽度] */
             display: grid !important;
+            /* 关键：左侧固定、中间自适应、右侧固定自定义宽度 */
             grid-template-columns: var(--sidebar-width) 1fr var(--custom-right-sidebar-width) !important;
-            max-width: 93% !important;
+            column-gap: var(--section-gap); /* 保持间距 */
+            max-width: 95% !important; /* 增加整体利用率 */
+        }
+
+        /* 4. 强制右侧栏保持在网格的第三列，防止掉下去 */
+        .right-sidebar {
+            grid-column: 3 / 4 !important;
+            width: var(--custom-right-sidebar-width) !important;
+            display: block !important;
         }
     }
 
+    /* 5. 调整文章正文的最大宽度限制 */
     .article-page .main-article {
-        max-width: var(--article-max-width);
-        margin-left: auto;
-        margin-right: auto;
-    }
-
-    /* 确保右侧小部件（包括目录）填满新设定的宽度 */
-    .right-sidebar {
-        width: var(--custom-right-sidebar-width) !important;
-    }
-
-    .widget.toc {
-        width: 100% !important;
+        max-width: 1200px; 
+        margin: 0 auto;
     }
 </style>
