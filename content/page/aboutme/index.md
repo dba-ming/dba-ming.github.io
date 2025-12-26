@@ -41,4 +41,4 @@ menu:
 - **未完待续...**
 
 
-<img src="shanghai.jpg" width="30%" />
+<img src="shanghai.jpg" width="60%" />
