@@ -1,7 +1,6 @@
 ---
 title: "关于我"
-description: "这里是关于我的介绍"
-date: 2024-02-06
+date: 2024-01-06
 slug: "aboutme"
 layout: "page"
 
