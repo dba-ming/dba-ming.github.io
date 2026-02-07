@@ -6,8 +6,7 @@ favicon = "/favicon.png"
 
 [footer]
 since = 2024
-customText = "工信部备案：苏ICP备2021050191号\n
-公安备案：苏公网安备32021302000744号"
+customText = "工信部备案：苏ICP备2021050191号 <br> 公安备案：苏公网安备32021302000744号"
 
 [dateFormat]
 published = "Jan 02, 2006"
