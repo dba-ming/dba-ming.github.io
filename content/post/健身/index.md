@@ -31,7 +31,7 @@ weight: 1       # You can add weight to some posts to override the default sorti
 
 ## 肩
 
-<img src="assets/550f95caa6a306c80e9b02a82ae2f38b-20260127114402-g1ax1vn.jpg" width="30%" />
+<img src="assets/550f95caa6a306c80e9b02a82ae2f38b-20260127114402-g1ax1vn.jpg" width="50%" />
 
 **分动式推肩机 (Iso-Lateral Shoulder Press)**
 
@@ -49,7 +49,7 @@ weight: 1       # You can add weight to some posts to override the default sorti
 
 ## 上胸
 
-![bbd2a4285111ebc790d1d58f12e03519](assets/bbd2a4285111ebc790d1d58f12e03519-20260127114415-gpa4n68.jpg)
+<img src="assets/bbd2a4285111ebc790d1d58f12e03519-20260127114415-gpa4n68.jpg" width="50%" />
 
 **分动式上斜推胸机 (Iso-Lateral Incline Press)**
 
@@ -67,9 +67,7 @@ weight: 1       # You can add weight to some posts to override the default sorti
 
 ## 中胸
 
-‍
-
-![image](assets/image-20260205210230-5b63m5x.png)
+<img src="assets/image-20260205210230-5b63m5x.png" width="50%" />
 
 这个器械的学名通常叫**分动式坐姿推胸机 (Iso-Lateral Bench Press / Chest Press)** 。它的动作模式是模拟我们最熟悉的“平板杠铃卧推”。
 
