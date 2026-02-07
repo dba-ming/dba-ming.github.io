@@ -23,15 +23,15 @@ weight: 1       # You can add weight to some posts to override the default sorti
 |2|2025.12.27|14-15|腿||
 |3|2026.1.10|14-15|胸、背||
 |4|2026.1.18|19-20|腿||
-|5|2026.1.24|9-10|胸、背|![eb2acebc66b8309571a94622a4c2d5ae](assets/eb2acebc66b8309571a94622a4c2d5ae-20260207133215-jyzell0.jpg)<br />体重：66.6kg；骨骼肌：25.4kg；体脂率：31.7%；BMI：24.2<br />|
-|6|2026.1.31|9-10|腿|![30bfb76c29903e78ea5d6d26142d0256](assets/30bfb76c29903e78ea5d6d26142d0256-20260207133131-30evkky.jpg)<br />体重：66.4kg；骨骼肌：25.6kg；体脂率：31.1%；BMI：24.1<br />|
+|5|2026.1.24|9-10|胸、背|体重：66.6kg；骨骼肌：25.4kg；体脂率：31.7%；BMI：24.2|
+|6|2026.1.31|9-10|腿|体重：66.4kg；骨骼肌：25.6kg；体脂率：31.1%；BMI：24.1|
 |7|2026.2.7|10-11|胸、背||
 
 ‍
 
 ## 肩
 
-![550f95caa6a306c80e9b02a82ae2f38b](assets/550f95caa6a306c80e9b02a82ae2f38b-20260127114402-g1ax1vn.jpg)
+<img src="assets/550f95caa6a306c80e9b02a82ae2f38b-20260127114402-g1ax1vn.jpg" width="30%" />
 
 **分动式推肩机 (Iso-Lateral Shoulder Press)**
 
